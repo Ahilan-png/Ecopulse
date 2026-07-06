@@ -1,0 +1,49 @@
+:root{--bg:#031012;--card:#0b2b2e;--ink:#effffb;--mut:#9bcac4;--g:#3cff9b;--c:#55e6ff;--b:#1178ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at top left,#0d4b4b,#031012 55%);color:var(--ink);font-family:Segoe UI,Arial,sans-serif;line-height:1.45}
+a{color:inherit;text-decoration:none}.muted,.lead,small,dt,.dose span,.impact-grid span,.ray em{color:var(--mut)}
+
+.topbar{position:fixed;z-index:9;inset:0 0 auto;display:flex;align-items:center;gap:14px;padding:12px 5vw;background:#031012e6;border-bottom:1px solid #55e6ff33}
+.brand{font-weight:900}.brand span{display:inline-block;width:12px;height:12px;margin-right:10px;border-radius:50%;background:var(--g);box-shadow:0 0 16px var(--g);animation:blink 1s infinite}
+.quote-strip{max-width:34vw;color:var(--g);font-size:.78rem;font-weight:800;text-transform:uppercase}
+nav{margin-left:auto;display:flex;gap:8px}nav a,.cta,.patient-nav a{padding:9px 13px;border:1px solid #55e6ff44;border-radius:999px;color:var(--mut)}
+nav a:hover,.cta:hover,.patient-nav a:hover{color:var(--ink);border-color:var(--c)}
+
+.page{min-height:100vh;padding:108px 5vw 52px;display:grid;gap:28px;align-content:center}
+.hero{grid-template-columns:.75fr 1.25fr}.file{grid-template-columns:220px 1fr;align-items:start}
+h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.7rem,6vw,6.7rem);line-height:.9}h2{font-size:clamp(2rem,4vw,4.5rem);line-height:.95}
+.intro{max-width:790px}.eyebrow{text-transform:uppercase;color:var(--c);font-size:.76rem;font-weight:900;letter-spacing:.16em}
+.section-title{min-height:34vh;padding:120px 5vw 50px;display:grid;place-items:center;text-align:center;background:linear-gradient(#0000,#0a303355,#0000)}
+.section-title b{font-size:clamp(2rem,5vw,5.2rem);line-height:1.05}
+
+.icu-grid,.action-grid,.impact-grid,.ray{display:grid;gap:16px}.icu-grid{grid-template-columns:repeat(2,1fr)}.action-grid{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.impact-grid{grid-template-columns:repeat(2,1fr)}
+.monitor,.chart,.patient-nav,.dose,.impact-card{padding:22px;border:1px solid #55e6ff33;border-radius:8px;background:linear-gradient(145deg,#0d3539,#07191b);box-shadow:0 16px 40px #0008}
+.monitor{position:relative;min-height:190px;transition:.2s}.monitor:hover,.dose:hover{transform:translateY(-5px);border-color:var(--g)}
+.monitor b,.monitor small{display:block}.monitor b{font-size:1.45rem}.monitor small{color:var(--mut)}
+.triage,.badge{display:inline-block;padding:7px 11px;border:1px solid #3cff9b88;border-radius:7px;background:#04201d;color:var(--g);font-size:.74rem;font-weight:900;text-transform:uppercase;white-space:nowrap}
+.triage{margin-top:10px}
+dl{display:grid;grid-template-columns:1fr auto;gap:6px 14px;margin:14px 0 0}dd{margin:0;color:var(--g);font-weight:900}
+
+.patient-nav{position:sticky;top:96px}.patient-nav a{display:block;margin:9px 0;border-radius:8px}
+.records{display:grid;gap:22px}.chart{scroll-margin-top:130px;font-family:"Segoe Print","Comic Sans MS",cursive}.chart:target{border-color:var(--g);box-shadow:0 0 28px #3cff9b44}
+.chart-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}.chart-head .eyebrow{font-family:"Segoe Print","Comic Sans MS",cursive;font-size:1rem;text-transform:none;color:#b7fff0}
+.analytics{display:grid;grid-template-columns:100px 1fr;gap:14px;align-items:center;margin:16px 0;padding:14px;border:1px solid #55e6ff33;border-radius:8px;background:#03101288;font-family:Segoe UI,Arial,sans-serif}
+.ring{width:90px;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#07191b 58%,#0000 59%),conic-gradient(var(--g) 0 var(--p),#12383b var(--p));color:var(--g);font-size:1.6rem;font-weight:900}
+.ring span{display:block;font-size:.62rem;color:var(--mut);text-transform:uppercase}
+.bars b{display:block;margin:5px 0;color:var(--mut);font-size:.78rem}.bars i{display:block;width:var(--w);height:10px;border-radius:99px;background:linear-gradient(90deg,var(--b),var(--c),var(--g))}
+.result{padding:12px;border-left:4px solid var(--g);background:#3cff9b12;font-weight:800}
+
+.timeline-page{text-align:center}.ray{position:relative;grid-template-columns:repeat(6,1fr);width:min(1100px,100%);margin:70px auto 40px}
+.ray:before{content:"";position:absolute;left:0;right:0;top:42px;height:14px;border-radius:99px;background:linear-gradient(90deg,var(--b),var(--c),var(--g))}
+.ray:after{content:"";position:absolute;right:-8px;top:34px;border:15px solid #0000;border-left-color:var(--g)}
+.ray span:first-child:after{content:"";position:absolute;left:-10px;top:34px;border:15px solid #0000;border-right-color:var(--b)}
+.ray span{position:relative;padding-top:78px;color:var(--c);font-weight:900}.ray span:before{content:"";position:absolute;top:34px;left:50%;width:3px;height:32px;background:var(--g)}
+.ray b,.ray em,.dose b,.dose span,.impact-grid b,.impact-grid span{display:block}.closing{font-size:clamp(1.4rem,3vw,2.6rem)}
+
+.action-page{align-content:start}.dose{min-height:205px;cursor:pointer}.dose input{accent-color:var(--g);width:20px;height:20px}.dose b{margin:12px 0 8px}
+.dose:has(input:checked){border-color:var(--g);background:#103d39}.dose:has(input:checked):after{content:"Protocol administered";display:block;margin-top:12px;color:var(--g);font-weight:900}
+.impact-card{width:min(1050px,100%);margin:auto}.impact-grid p{padding:16px;border:1px solid #ffffff12;border-radius:8px;background:#ffffff06}
+.sources{width:min(920px,100%);margin:auto;padding:18px;border-top:1px solid #55e6ff33;text-align:center}.sources a{display:inline-block;margin:6px 10px;color:var(--mut);border-bottom:1px solid #55e6ff55}.credit{font-weight:800;color:var(--ink)}
+
+@keyframes blink{50%{opacity:.35}}
+@media(max-width:900px){.hero,.file,.icu-grid,.impact-grid,.analytics,.ray{grid-template-columns:1fr}.topbar{flex-wrap:wrap}.quote-strip{order:3;max-width:100%;width:100%}.page{padding-top:160px}h1{font-size:2.7rem}}
